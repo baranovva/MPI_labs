@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-part = 2
+part = 1
 indexes = ['N=1', 'N=2', 'N=3', 'N=4']
 threads = np.arange(1, 5)
 
 if part == 1:
-    times_openmp_integral = np.array([0.0382028, 0.0272019, 0.017011, 0.0134854])
+    times_openmp_integral = np.array([0.320822, 0.225718, 0.142856, 0.1119])
 
     plt.scatter(indexes, times_openmp_integral, s=60, c='b')
     plt.ylabel("t, s")
